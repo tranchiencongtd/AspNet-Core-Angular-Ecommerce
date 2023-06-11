@@ -1,4 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Ecommerce.Configurations.InventoryTickets;
+using Ecommerce.Configurations.Orders;
+using Ecommerce.Configurations.Products;
+using Ecommerce.Inventories;
+using Ecommerce.InventoryTickets;
+using Ecommerce.Manufacturers;
+using Ecommerce.Orders;
+using Ecommerce.ProductAttributes;
+using Ecommerce.ProductCategories;
+using Ecommerce.Products;
+using Ecommerce.Promotions;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.Data;
@@ -51,6 +62,32 @@ public class EcommerceDbContext :
     public DbSet<Tenant> Tenants { get; set; }
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
+    // Ecommerce
+    public DbSet<ProductAttribute> ProductAttributes { get; set; }
+    public DbSet<Inventory> Inventories { get; set; }
+    public DbSet<InventoryTicket> InventoryTickets { get; set; }
+    public DbSet<InventoryTicketItem> InventoryTicketItems { get; set; }
+    public DbSet<Manufacturer> Manufacturers { get; set; }
+    public DbSet<Order> Orders { get; set; }
+    public DbSet<OrderItem> OrderItems { get; set; }
+    public DbSet<OrderTransaction> OrderTransactions { get; set; }
+    public DbSet<ProductCategory> ProductCategories { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<ProductAttributeDateTime> ProductAttributeDateTimes { get; set; }
+    public DbSet<ProductAttributeDecimal> ProductAttributeDecimals { get; set; }
+    public DbSet<ProductAttributeInt> ProductAttributeInts { get; set; }
+    public DbSet<ProductAttributeText> ProductAttributeTexts { get; set; }
+    public DbSet<ProductAttributeVarchar> ProductAttributeVarchars { get; set; }
+    public DbSet<ProductLink> ProductLinks { get; set; }
+    public DbSet<ProductReview> ProductReviews { get; set; }
+    public DbSet<ProductTag> ProductTags { get; set; }
+    public DbSet<Tag> Tags { get; set; }
+    public DbSet<Promotion> Promotions { get; set; }
+    public DbSet<PromotionCategory> PromotionCategories { get; set; }
+    public DbSet<PromotionManufacturer> PromotionManufacturers { get; set; }
+    public DbSet<PromotionProduct> PromotionProducts { get; set; }
+    public DbSet<PromotionUsageHistory> PromotionUsageHistories { get; set; }
+
     #endregion
 
     public EcommerceDbContext(DbContextOptions<EcommerceDbContext> options)
@@ -76,11 +113,12 @@ public class EcommerceDbContext :
 
         /* Configure your own tables/entities inside here */
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(EcommerceConsts.DbTablePrefix + "YourEntities", EcommerceConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
+        builder.ApplyConfiguration(new ProductAttributeConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeDecimalConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeTextConfiguration());
+        builder.ApplyConfiguration(new InventoryConfiguration());
+        builder.ApplyConfiguration(new InventoryTicketItemConfiguration());
+        builder.ApplyConfiguration(new OrderItemConfiguration());
+        builder.ApplyConfiguration(new ProductTagConfiguration());
     }
 }
