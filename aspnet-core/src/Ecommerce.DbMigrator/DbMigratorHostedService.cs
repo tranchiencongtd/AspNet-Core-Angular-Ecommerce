@@ -1,11 +1,11 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
+﻿using Ecommerce.Data;
+using Ecommerce.Seeding;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Ecommerce.Data;
-using Ecommerce.Seeding;
 using Serilog;
+using System.Threading;
+using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Data;
 
@@ -24,30 +24,28 @@ public class DbMigratorHostedService : IHostedService
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        using (var application = await AbpApplicationFactory.CreateAsync<EcommerceDbMigratorModule>(options =>
+        using IAbpApplicationWithInternalServiceProvider application = await AbpApplicationFactory.CreateAsync<EcommerceDbMigratorModule>(options =>
         {
-           options.Services.ReplaceConfiguration(_configuration);
-           options.UseAutofac();
-           options.Services.AddLogging(c => c.AddSerilog());
-           options.AddDataMigrationEnvironment();
-        }))
-        {
-            await application.InitializeAsync();
+            _ = options.Services.ReplaceConfiguration(_configuration);
+            options.UseAutofac();
+            _ = options.Services.AddLogging(c => c.AddSerilog());
+            options.AddDataMigrationEnvironment();
+        });
+        await application.InitializeAsync();
 
-            await application
-                .ServiceProvider
-                .GetRequiredService<EcommerceDbMigrationService>()
-                .MigrateAsync();
-            
-            await application
-                .ServiceProvider
-                .GetRequiredService<IdentityDataSeeder>()
-                .SeedAsync("admin@gmail.com", "Abc@123$");
+        await application
+            .ServiceProvider
+            .GetRequiredService<EcommerceDbMigrationService>()
+            .MigrateAsync();
 
-            await application.ShutdownAsync();
+        _ = await application
+            .ServiceProvider
+            .GetRequiredService<IdentityDataSeeder>()
+            .SeedAsync("admin@gmail.com", "Abc@123$");
 
-            _hostApplicationLifetime.StopApplication();
-        }
+        await application.ShutdownAsync();
+
+        _hostApplicationLifetime.StopApplication();
     }
 
     public Task StopAsync(CancellationToken cancellationToken)

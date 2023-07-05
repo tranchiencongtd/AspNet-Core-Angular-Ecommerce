@@ -6,21 +6,21 @@ export const environment = {
   production: false,
   application: {
     baseUrl,
-    name: 'Ecommerce',
+    name: 'Ecommerce Admin',
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44388/',
+    issuer: 'https://localhost:5000/',
     redirectUri: baseUrl,
     clientId: 'Ecommerce_App',
     responseType: 'code',
-    scope: 'offline_access Ecommerce',
+    scope: 'offline_access Ecommerce.Admin',
     requireHttps: true,
   },
   apis: {
     default: {
-      url: 'https://localhost:44395',
-      rootNamespace: 'Ecommerce',
+      url: 'https://localhost:5001',
+      rootNamespace: 'Ecommerce.Admin',
     },
   },
 } as Environment;
