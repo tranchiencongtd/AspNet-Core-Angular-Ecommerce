@@ -3,7 +3,7 @@ using Volo.Abp.Domain.Entities.Auditing;
 
 namespace Ecommerce.Products
 {
-    public class Product : CreationAuditedAggregateRoot<Guid>
+    public class Product : AuditedAggregateRoot<Guid>
     {
         public Guid ManufactureId { get; set; }
         public string Name { get; set; }

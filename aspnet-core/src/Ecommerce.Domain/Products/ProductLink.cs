@@ -10,6 +10,6 @@ namespace Ecommerce.Products
     public class ProductLink : Entity<Guid>
     {
         public Guid ProductId { get; set; }
-        string LinkedProductId { get; set; }
+        public Guid LinkedProductId { get; set; }
     }
 }
