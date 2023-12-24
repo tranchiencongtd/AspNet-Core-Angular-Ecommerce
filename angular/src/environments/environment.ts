@@ -12,7 +12,7 @@ export const environment = {
   oAuthConfig: {
     issuer: 'https://localhost:5000/',
     redirectUri: baseUrl,
-    clientId: 'Ecommerce_App',
+    clientId: 'Ecommerce_Admin',
     responseType: 'code',
     scope: 'offline_access Ecommerce.Admin',
     requireHttps: true,

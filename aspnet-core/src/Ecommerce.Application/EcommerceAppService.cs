@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Ecommerce.Localization;
+﻿using Ecommerce.Localization;
 using Volo.Abp.Application.Services;
 
 namespace Ecommerce;

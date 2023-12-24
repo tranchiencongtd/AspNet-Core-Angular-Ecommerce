@@ -1,6 +1,11 @@
-﻿using Ecommerce.Configurations.InventoryTickets;
+﻿using Ecommerce.Configurations.Inventories;
+using Ecommerce.Configurations.InventoryTickets;
+using Ecommerce.Configurations.Manufacturers;
 using Ecommerce.Configurations.Orders;
+using Ecommerce.Configurations.ProductAttributes;
+using Ecommerce.Configurations.ProductCategories;
 using Ecommerce.Configurations.Products;
+using Ecommerce.Configurations.Promotions;
 using Ecommerce.Inventories;
 using Ecommerce.InventoryTickets;
 using Ecommerce.Manufacturers;
@@ -93,7 +98,6 @@ public class EcommerceDbContext :
     public EcommerceDbContext(DbContextOptions<EcommerceDbContext> options)
         : base(options)
     {
-
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
@@ -101,7 +105,6 @@ public class EcommerceDbContext :
         base.OnModelCreating(builder);
 
         /* Include modules to your migration db context */
-
         builder.ConfigurePermissionManagement();
         builder.ConfigureSettingManagement();
         builder.ConfigureBackgroundJobs();
@@ -112,13 +115,30 @@ public class EcommerceDbContext :
         builder.ConfigureTenantManagement();
 
         /* Configure your own tables/entities inside here */
-
         builder.ApplyConfiguration(new ProductAttributeConfiguration());
-        builder.ApplyConfiguration(new ProductAttributeDecimalConfiguration());
-        builder.ApplyConfiguration(new ProductAttributeTextConfiguration());
         builder.ApplyConfiguration(new InventoryConfiguration());
+        builder.ApplyConfiguration(new InventoryTicketConfiguration());
         builder.ApplyConfiguration(new InventoryTicketItemConfiguration());
+        builder.ApplyConfiguration(new ManufacturerConfiguration());
+        builder.ApplyConfiguration(new OrderConfiguration());
         builder.ApplyConfiguration(new OrderItemConfiguration());
+        builder.ApplyConfiguration(new OrderTransactionConfiguration());
+        builder.ApplyConfiguration(new ProductCategoryConfiguration());
+        builder.ApplyConfiguration(new ProductConfiguration());
+        builder.ApplyConfiguration(new ProductLinkConfiguration());
+        builder.ApplyConfiguration(new ProductReviewConfiguration());
         builder.ApplyConfiguration(new ProductTagConfiguration());
+        builder.ApplyConfiguration(new TagConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeDateTimeConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeDecimalConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeIntConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeTextConfiguration());
+        builder.ApplyConfiguration(new ProductAttributeVarcharConfiguration());
+        builder.ApplyConfiguration(new PromotionConfiguration());
+        builder.ApplyConfiguration(new PromotionCategoryConfiguration());
+        builder.ApplyConfiguration(new PromotionManufacturerConfiguration());
+        builder.ApplyConfiguration(new PromotionProductConfiguration());
+        builder.ApplyConfiguration(new PromotionUsageHistoryConfiguration());
+        // builder.ApplyConfiguration(new IdentitySettingConfiguration());
     }
 }

@@ -1,5 +1,6 @@
-﻿using Localization.Resources.AbpUi;
+﻿using Ecommerce.Admin;
 using Ecommerce.Localization;
+using Localization.Resources.AbpUi;
 using Volo.Abp.Account;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
@@ -9,7 +10,7 @@ using Volo.Abp.PermissionManagement.HttpApi;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 
-namespace Ecommerce.Admin;
+namespace Ecommerce;
 
 [DependsOn(
     typeof(EcommerceApplicationContractsModule),

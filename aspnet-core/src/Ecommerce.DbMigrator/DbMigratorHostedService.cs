@@ -1,11 +1,11 @@
-﻿using Ecommerce.Data;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Ecommerce.Data;
 using Ecommerce.Seeding;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using System.Threading;
-using System.Threading.Tasks;
 using Volo.Abp;
 using Volo.Abp.Data;
 
@@ -38,7 +38,7 @@ public class DbMigratorHostedService : IHostedService
             .GetRequiredService<EcommerceDbMigrationService>()
             .MigrateAsync();
 
-        _ = await application
+        await application
             .ServiceProvider
             .GetRequiredService<IdentityDataSeeder>()
             .SeedAsync("admin@gmail.com", "Abc@123$");

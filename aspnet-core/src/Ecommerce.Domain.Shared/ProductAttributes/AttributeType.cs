@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ecommerce.ProductAttributes
+﻿namespace Ecommerce.ProductAttributes
 {
     public enum AttributeType
     {

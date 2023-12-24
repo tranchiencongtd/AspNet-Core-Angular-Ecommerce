@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Ecommerce.Inventories
+namespace Ecommerce.Configurations.Inventories
 {
     public class InventoryConfiguration : IEntityTypeConfiguration<Inventory>
     {
@@ -13,6 +13,9 @@ namespace Ecommerce.Inventories
             builder.Property(x => x.SKU)
                 .HasMaxLength(50)
                 .IsUnicode(false)
+                .IsRequired();
+
+            builder.Property(x => x.StockQuantity)
                 .IsRequired();
         }
     }

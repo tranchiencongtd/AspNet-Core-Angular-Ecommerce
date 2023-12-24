@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ecommerce.Admin.Models.Test;
+namespace Ecommerce.Models.Test;
 
 public class TestModel
 {

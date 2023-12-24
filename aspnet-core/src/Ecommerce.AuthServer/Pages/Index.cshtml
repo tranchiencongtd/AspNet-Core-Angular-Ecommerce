@@ -1,12 +1,17 @@
 ﻿@page
+@using System.Net
+@using Ecommerce.Localization
 @using Microsoft.AspNetCore.Http.Extensions
 @using Microsoft.AspNetCore.Mvc.Localization
-@using Ecommerce.Pages
-@using Ecommerce.Localization
-@using Volo.Abp.Users
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Alert
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Button
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Card
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Dropdown
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Grid
 @using Volo.Abp.AspNetCore.Mvc.UI.Theming
 @using Volo.Abp.Ui.Branding
-@model IndexModel
+@using Volo.Abp.Users
+@model Ecommerce.Pages.IndexModel
 @inject IHtmlLocalizer<EcommerceResource> L
 @inject ICurrentUser CurrentUser
 @inject IBrandingProvider BrandingProvider
@@ -69,7 +74,7 @@
                                                 <abp-dropdown-menu>
                                                     @foreach (var language in Model.Languages)
                                                     {
-                                                        var languageUrl = Url.Content($"~/Abp/Languages/Switch?culture={language.CultureName}&uiCulture={language.UiCultureName}&returnUrl={System.Net.WebUtility.UrlEncode(Request.GetEncodedPathAndQuery())}");
+                                                        var languageUrl = Url.Content($"~/Abp/Languages/Switch?culture={language.CultureName}&uiCulture={language.UiCultureName}&returnUrl={WebUtility.UrlEncode(Request.GetEncodedPathAndQuery())}");
                                                         <abp-dropdown-item href="@languageUrl">@language.DisplayName</abp-dropdown-item>
                                                     }
                                                 </abp-dropdown-menu>
@@ -84,7 +89,7 @@
                                 {
                                     foreach (var application in Model.Applications)
                                     {
-                                        <abp-column size-md="@Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Grid.ColumnSize._4" class="mb-2">
+                                        <abp-column size-md="@ColumnSize._4" class="mb-2">
                                             <abp-card>
                                                 <abp-card-body>
 
@@ -98,7 +103,7 @@
                                                     <h4>@application.DisplayName</h4>
                                                     <span class="text-muted">@application.ClientUri</span>
                                                     <div class="mt-1">
-                                                        <a abp-button="@Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Button.AbpButtonType.Outline_Secondary" href="@application.ClientUri">@L["Visit"]</a>
+                                                        <a abp-button="@AbpButtonType.Outline_Secondary" href="@application.ClientUri">@L["Visit"]</a>
                                                     </div>
                                                 </abp-card-body>
                                             </abp-card>

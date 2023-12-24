@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Ecommerce.ProductAttributes
+namespace Ecommerce.Configurations.ProductAttributes
 {
     public class ProductAttributeConfiguration : IEntityTypeConfiguration<ProductAttribute>
     {

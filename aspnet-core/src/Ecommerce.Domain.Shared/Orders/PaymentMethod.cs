@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ecommerce.Orders
+﻿namespace Ecommerce.Orders
 {
     public enum PaymentMethod
     {

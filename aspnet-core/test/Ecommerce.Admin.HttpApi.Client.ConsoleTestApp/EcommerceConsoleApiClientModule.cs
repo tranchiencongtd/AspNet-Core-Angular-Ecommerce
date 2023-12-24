@@ -1,5 +1,4 @@
 ﻿using System;
-using Ecommerce.Admin;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Volo.Abp.Autofac;
@@ -7,7 +6,7 @@ using Volo.Abp.Http.Client;
 using Volo.Abp.Http.Client.IdentityModel;
 using Volo.Abp.Modularity;
 
-namespace Ecommerce.HttpApi.Client.ConsoleTestApp;
+namespace Ecommerce.Admin.HttpApi.Client.ConsoleTestApp;
 
 [DependsOn(
     typeof(AbpAutofacModule),

@@ -1,7 +1,7 @@
 ﻿using Ecommerce.Localization;
 using Volo.Abp.AspNetCore.Mvc;
 
-namespace Ecommerce.Admin.Controllers;
+namespace Ecommerce.Controllers;
 
 /* Inherit your controllers from this class.
  */

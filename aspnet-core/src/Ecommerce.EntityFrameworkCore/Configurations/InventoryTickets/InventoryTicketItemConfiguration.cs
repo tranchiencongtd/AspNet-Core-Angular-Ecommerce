@@ -1,12 +1,6 @@
-﻿using Ecommerce.ProductAttributes;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Ecommerce.InventoryTickets;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ecommerce.InventoryTickets;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Ecommerce.Configurations.InventoryTickets
 {
@@ -22,9 +16,8 @@ namespace Ecommerce.Configurations.InventoryTickets
                 .IsRequired();
 
             builder.Property(x => x.BatchNumber)
-               .HasMaxLength(50)
-               .IsRequired();
-
+                .HasMaxLength(50)
+                .IsRequired();
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Ecommerce.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Ecommerce.Data;
 using Volo.Abp.DependencyInjection;
 
 namespace Ecommerce.EntityFrameworkCore;

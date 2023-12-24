@@ -1,11 +1,6 @@
 ﻿using Ecommerce.Products;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Ecommerce.Configurations.Products
 {
@@ -14,7 +9,7 @@ namespace Ecommerce.Configurations.Products
         public void Configure(EntityTypeBuilder<ProductTag> builder)
         {
             builder.ToTable(EcommerceConsts.DbTablePrefix + "ProductTags");
-            builder.HasKey(x => new {x.ProductId, x.TagId});
+            builder.HasKey(x => new { x.ProductId, x.TagId });
         }
     }
 }

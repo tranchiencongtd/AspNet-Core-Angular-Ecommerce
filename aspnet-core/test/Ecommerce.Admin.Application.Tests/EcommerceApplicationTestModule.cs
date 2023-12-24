@@ -1,7 +1,6 @@
-﻿using Ecommerce.Admin;
-using Volo.Abp.Modularity;
+﻿using Volo.Abp.Modularity;
 
-namespace Ecommerce;
+namespace Ecommerce.Admin;
 
 [DependsOn(
     typeof(EcommerceAdminApplicationModule),

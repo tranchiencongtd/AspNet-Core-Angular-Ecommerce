@@ -1,5 +1,4 @@
-﻿using Ecommerce.Orders;
-using System;
+﻿using System;
 using Volo.Abp.Domain.Entities;
 
 namespace Ecommerce.Products
