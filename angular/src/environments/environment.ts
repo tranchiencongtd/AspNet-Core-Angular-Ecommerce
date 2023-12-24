@@ -16,6 +16,7 @@ export const environment = {
     responseType: 'code',
     scope: 'offline_access Ecommerce.Admin',
     requireHttps: true,
+    dummyClientSecret: '1q2w3e*'
   },
   apis: {
     default: {
