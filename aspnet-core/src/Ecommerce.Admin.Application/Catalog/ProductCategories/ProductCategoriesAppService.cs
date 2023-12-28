@@ -32,13 +32,18 @@ public class ProductCategoriesAppService : CrudAppService<
         return new PagedResultDto<ProductCategoryInListDto>(totalCount,ObjectMapper.Map<List<ProductCategory>,List<ProductCategoryInListDto>>(data));
     }
 
-    public Task<List<ProductCategoryInListDto>> GetListAllAsync()
+    public async Task<List<ProductCategoryInListDto>> GetListAllAsync()
     {
-        throw new NotImplementedException();
+        var query = await Repository.GetQueryableAsync();
+        query = query.Where(x=>x.IsActive == true);
+        var data = await AsyncExecuter.ToListAsync(query);
+
+        return ObjectMapper.Map<List<ProductCategory>, List<ProductCategoryInListDto>>(data);
     }
 
-    public Task DeleteMultipleAsync(IEnumerable<Guid> ids)
+    public async Task DeleteMultipleAsync(IEnumerable<Guid> ids)
     {
-        throw new NotImplementedException();
+        await Repository.DeleteManyAsync(ids);
+        await UnitOfWorkManager.Current?.SaveChangesAsync()!;
     }
 }
