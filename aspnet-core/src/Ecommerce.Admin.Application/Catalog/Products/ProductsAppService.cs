@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Ecommerce.Admin.Catalog.Products.Attributes;
-using Ecommerce.ProductCategories;
 using Ecommerce.Products;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
@@ -24,16 +23,16 @@ namespace Ecommerce.Admin.Catalog.Products
            
         }
         
-        public async Task<PagedResultDto<ProductInListDto>> GetListFilterAsync(BaseListFilterDto input)
-        {
-            var query = await Repository.GetQueryableAsync();
-            query = query.WhereIf(!string.IsNullOrWhiteSpace(input.Keyword), x => x.Name.Contains(input.Keyword));
-
-            var totalCount = await AsyncExecuter.LongCountAsync(query);
-            var data = await AsyncExecuter.ToListAsync(query.Skip(input.SkipCount).Take(input.MaxResultCount));
-
-            return new PagedResultDto<ProductInListDto>(totalCount,ObjectMapper.Map<List<Product>,List<ProductInListDto>>(data));
-        }
+        // public async Task<PagedResultDto<ProductInListDto>> GetListFilterAsync(BaseListFilterDto input)
+        // {
+        //     var query = await Repository.GetQueryableAsync();
+        //     query = query.WhereIf(!string.IsNullOrWhiteSpace(input.Keyword), x => x.Name.Contains(input.Keyword));
+        //
+        //     var totalCount = await AsyncExecuter.LongCountAsync(query);
+        //     var data = await AsyncExecuter.ToListAsync(query.Skip(input.SkipCount).Take(input.MaxResultCount));
+        //
+        //     return new PagedResultDto<ProductInListDto>(totalCount,ObjectMapper.Map<List<Product>,List<ProductInListDto>>(data));
+        // }
 
         public async Task<List<ProductInListDto>> GetListAllAsync()
         {
