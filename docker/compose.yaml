@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+  
+  redis:
+    image: "redis:alpine"
+
+#network section
+networks:
+  default:
+    name: ecommerce
+    driver: bridge
+
+#volumes section
+volumes:
+  mysql_data:
+    name: mysql_data
+
