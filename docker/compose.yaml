@@ -1,13 +1,22 @@
 services:
-  mysql:
-    image: mysql:8.0
-    volumes:
-      - mysql_data:/var/lib/mysql
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: db
     environment:
-      MYSQL_ROOT_PASSWORD: secret
+      SA_PASSWORD: "Passw0rd!"
+      ACCEPT_EULA: "Y"
+    restart: always
+    volumes:
+      - sqlserver_data:/var/lib/sqlserver/data
+    ports:
+      - "1435:1433"
   
   redis:
     image: "redis:alpine"
+    container_name: redisdb
+    restart: always
+    ports:
+      - "6379:6379"
 
 #network section
 networks:
@@ -17,6 +26,6 @@ networks:
 
 #volumes section
 volumes:
-  mysql_data:
-    name: mysql_data
+  sqlserver_data:
+    name: sqlserver_data
 
