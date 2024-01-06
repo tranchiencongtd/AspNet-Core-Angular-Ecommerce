@@ -28148,3 +28148,256 @@ System.OperationCanceledException: The operation was canceled.
 2024-01-03 16:41:25.667 +07:00 [INF] Application is shutting down...
 2024-01-03 16:41:25.686 +07:00 [DBG] Stopped background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
 2024-01-03 16:41:25.686 +07:00 [DBG] Stopped background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-01-05 23:32:03.566 +07:00 [INF] Starting Ecommerce.Admin.HttpApi.Host.
+2024-01-05 23:32:07.675 +07:00 [INF] Loaded ABP modules:
+2024-01-05 23:32:07.676 +07:00 [INF] - Ecommerce.Admin.EcommerceHttpApiHostModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Ecommerce.EcommerceAdminHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Ecommerce.Admin.EcommerceApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Ecommerce.EcommerceDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-01-05 23:32:07.676 +07:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-01-05 23:32:07.676 +07:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-01-05 23:32:07.676 +07:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-01-05 23:32:07.676 +07:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-01-05 23:32:07.676 +07:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2024-01-05 23:32:07.676 +07:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2024-01-05 23:32:07.676 +07:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Volo.Abp.DistributedLocking.AbpDistributedLockingModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Ecommerce.Admin.EcommerceAdminApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Ecommerce.EcommerceDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-01-05 23:32:07.676 +07:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-01-05 23:32:07.676 +07:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Ecommerce.EntityFrameworkCore.EcommerceEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-01-05 23:32:07.676 +07:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-01-05 23:32:07.844 +07:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-01-05 23:32:07.851 +07:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-01-05 23:32:08.697 +07:00 [INF] User profile is available. Using '/home/congtc/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-05 23:32:08.795 +07:00 [INF] Initialized all ABP modules.
+2024-01-05 23:32:09.049 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-01-05 23:32:09.251 +07:00 [INF] Now listening on: https://localhost:5001
+2024-01-05 23:32:09.251 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 23:32:09.252 +07:00 [INF] Hosting environment: Development
+2024-01-05 23:32:09.252 +07:00 [INF] Content root path: /home/congtc/PROJECTS/NET/AspNet-Core-Angular-Ecommerce/aspnet-core/src/Ecommerce.Admin.HttpApi.Host
+2024-01-05 23:32:20.770 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - null null
+2024-01-05 23:32:21.221 +07:00 [INF] Executing endpoint 'Ecommerce.Admin.Controllers.HomeController.Index (Ecommerce.Admin.HttpApi.Host)'
+2024-01-05 23:32:21.412 +07:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Ecommerce.Admin.Controllers.HomeController (Ecommerce.Admin.HttpApi.Host).
+2024-01-05 23:32:21.438 +07:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2024-01-05 23:32:21.442 +07:00 [INF] Executed action Ecommerce.Admin.Controllers.HomeController.Index (Ecommerce.Admin.HttpApi.Host) in 26.8313ms
+2024-01-05 23:32:21.442 +07:00 [INF] Executed endpoint 'Ecommerce.Admin.Controllers.HomeController.Index (Ecommerce.Admin.HttpApi.Host)'
+2024-01-05 23:32:21.448 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - 302 0 null 679.7628ms
+2024-01-05 23:32:21.450 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - null null
+2024-01-05 23:32:21.454 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - 301 0 null 3.7473ms
+2024-01-05 23:32:21.456 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - null null
+2024-01-05 23:32:21.546 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 89.728ms
+2024-01-05 23:32:21.684 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - null null
+2024-01-05 23:32:21.698 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/ui/abp.js - null null
+2024-01-05 23:32:21.704 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/ui/abp.swagger.js - null null
+2024-01-05 23:32:21.713 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - null null
+2024-01-05 23:32:21.715 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - null null
+2024-01-05 23:32:21.728 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 23:32:21.746 +07:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2024-01-05 23:32:21.746 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/ui/abp.js - 200 3122 application/javascript 48.7676ms
+2024-01-05 23:32:21.859 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 130.9019ms
+2024-01-05 23:32:21.867 +07:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2024-01-05 23:32:21.886 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/ui/abp.swagger.js - 200 4375 application/javascript 181.4905ms
+2024-01-05 23:32:21.887 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-01-05 23:32:21.893 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - 200 144929 text/css 208.7265ms
+2024-01-05 23:32:21.912 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-05 23:32:21.918 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 203.7459ms
+2024-01-05 23:32:22.252 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-05 23:32:22.252 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 539.4665ms
+2024-01-05 23:32:23.247 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/abp/application-configuration - null null
+2024-01-05 23:32:23.250 +07:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-01-05 23:32:23.261 +07:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-01-05 23:32:23.289 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - null null
+2024-01-05 23:32:23.321 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - null null
+2024-01-05 23:32:23.323 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-05 23:32:23.323 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - 200 628 image/png 1.1805ms
+2024-01-05 23:32:23.452 +07:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-01-05 23:32:23.589 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 299.8099ms
+2024-01-05 23:32:28.018 +07:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-01-05 23:32:28.042 +07:00 [DBG] Added 0 entity changes to the current audit log
+2024-01-05 23:32:28.048 +07:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-01-05 23:32:28.082 +07:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 4820.3615ms
+2024-01-05 23:32:28.082 +07:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-01-05 23:32:28.084 +07:00 [DBG] Added 0 entity changes to the current audit log
+2024-01-05 23:32:28.089 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/abp/application-configuration - 200 null application/json; charset=utf-8 4841.3635ms
+2024-01-05 23:34:11.567 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/oauth2-redirect.html?code=si-xp7a_54QEuUuTxpMqqE5jLbCxbieZEIdVW6ZHYWE&state=RnJpIEphbiAwNSAyMDI0IDIzOjMzOjIzIEdNVCswNzAwIChJbmRvY2hpbmEgVGltZSk%3D&iss=https%3A%2F%2Flocalhost%3A5000%2F - null null
+2024-01-05 23:34:11.571 +07:00 [INF] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+2024-01-05 23:34:11.571 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/oauth2-redirect.html?code=si-xp7a_54QEuUuTxpMqqE5jLbCxbieZEIdVW6ZHYWE&state=RnJpIEphbiAwNSAyMDI0IDIzOjMzOjIzIEdNVCswNzAwIChJbmRvY2hpbmEgVGltZSk%3D&iss=https%3A%2F%2Flocalhost%3A5000%2F - 200 null text/html 4.0425ms
+2024-01-05 23:34:11.800 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 23:34:11.801 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4261ms
+2024-01-05 23:41:45.924 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/abp/Swashbuckle/SetCsrfCookie - null null
+2024-01-05 23:41:47.936 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.InternalValidators.ValidateAfterSignatureFailed(SecurityToken securityToken, Nullable`1 notBefore, Nullable`1 expires, IEnumerable`1 audiences, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-05 23:41:47.940 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2024-01-05 23:41:47.942 +07:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2024-01-05 23:41:47.944 +07:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2024-01-05 23:41:48.034 +07:00 [INF] Executing action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) - Validation state: "Valid"
+2024-01-05 23:41:48.091 +07:00 [INF] Executed action method Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 6.5839ms.
+2024-01-05 23:41:48.100 +07:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 156.2233ms
+2024-01-05 23:41:48.101 +07:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2024-01-05 23:41:48.102 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/abp/Swashbuckle/SetCsrfCookie - 204 null null 2177.3847ms
+2024-01-05 23:41:48.278 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/app/product-categories - null null
+2024-01-05 23:41:48.382 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.InternalValidators.ValidateAfterSignatureFailed(SecurityToken securityToken, Nullable`1 notBefore, Nullable`1 expires, IEnumerable`1 audiences, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-05 23:41:48.382 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2024-01-05 23:41:48.385 +07:00 [INF] Executing endpoint 'Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAsync (Ecommerce.Admin.Application)'
+2024-01-05 23:41:48.407 +07:00 [INF] Route matched with {action = "GetList", controller = "ProductCategories", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Ecommerce.Admin.Catalog.ProductCategories.ProductCategoryDto]] GetListAsync(Volo.Abp.Application.Dtos.PagedResultRequestDto) on controller Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService (Ecommerce.Admin.Application).
+2024-01-05 23:41:48.628 +07:00 [INF] Executing action method Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAsync (Ecommerce.Admin.Application) - Validation state: "Valid"
+2024-01-05 23:41:50.095 +07:00 [WRN] No store type was specified for the decimal property 'Value' on entity type 'ProductAttributeDecimal'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-01-05 23:41:50.454 +07:00 [INF] Executed action method Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAsync (Ecommerce.Admin.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1804.9022ms.
+2024-01-05 23:41:50.522 +07:00 [DBG] Added 0 entity changes to the current audit log
+2024-01-05 23:41:50.529 +07:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Ecommerce.Admin.Catalog.ProductCategories.ProductCategoryDto, Ecommerce.Admin.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-05 23:41:50.566 +07:00 [INF] Executed action Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAsync (Ecommerce.Admin.Application) in 2158.0614ms
+2024-01-05 23:41:50.566 +07:00 [INF] Executed endpoint 'Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAsync (Ecommerce.Admin.Application)'
+2024-01-05 23:41:50.567 +07:00 [DBG] Added 0 entity changes to the current audit log
+2024-01-05 23:41:50.567 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/app/product-categories - 200 null application/json; charset=utf-8 2290.3651ms
+2024-01-05 23:42:03.408 +07:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/app/product-categories/all - null null
+2024-01-05 23:42:03.418 +07:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.InternalValidators.ValidateAfterSignatureFailed(SecurityToken securityToken, Nullable`1 notBefore, Nullable`1 expires, IEnumerable`1 audiences, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-05 23:42:03.418 +07:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2024-01-05 23:42:03.419 +07:00 [INF] Executing endpoint 'Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAllAsync (Ecommerce.Admin.Application)'
+2024-01-05 23:42:03.423 +07:00 [INF] Route matched with {action = "GetListAll", controller = "ProductCategories", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Ecommerce.Admin.Catalog.ProductCategories.ProductCategoryInListDto]] GetListAllAsync() on controller Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService (Ecommerce.Admin.Application).
+2024-01-05 23:42:03.425 +07:00 [INF] Executing action method Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAllAsync (Ecommerce.Admin.Application) - Validation state: "Valid"
+2024-01-05 23:44:40.119 +07:00 [INF] Executed action method Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAllAsync (Ecommerce.Admin.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 156694.6822ms.
+2024-01-05 23:44:40.120 +07:00 [DBG] Added 0 entity changes to the current audit log
+2024-01-05 23:44:40.120 +07:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Ecommerce.Admin.Catalog.ProductCategories.ProductCategoryInListDto, Ecommerce.Admin.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-05 23:44:40.125 +07:00 [INF] Executed action Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAllAsync (Ecommerce.Admin.Application) in 156701.9617ms
+2024-01-05 23:44:40.125 +07:00 [INF] Executed endpoint 'Ecommerce.Admin.Catalog.ProductCategories.ProductCategoriesAppService.GetListAllAsync (Ecommerce.Admin.Application)'
+2024-01-05 23:44:40.125 +07:00 [DBG] Added 0 entity changes to the current audit log
+2024-01-05 23:44:40.125 +07:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/app/product-categories/all - 200 null application/json; charset=utf-8 156716.9933ms
+2024-01-05 23:44:56.957 +07:00 [ERR] One or more errors occurred. (Timeout awaiting response (outbound=0KiB, inbound=0KiB, 12048ms elapsed, timeout is 5000ms), command=EVAL, next: EVAL, inst: 0, qu: 0, qs: 1, aw: False, bw: SpinningDown, rs: DequeueResult, ws: Idle, in: 0, in-pipe: 4, out-pipe: 0, last-in: 2, cur-in: 4, sync-ops: 0, async-ops: 250, serverEndpoint: 127.0.0.1:6379, conn-sec: 769.06, aoc: 1, mc: 1/1/0, mgr: 9 of 10 available, clientName: congtc(SE.Redis-v2.6.122.38350), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=4509,Timers=5), v: 2.6.122.38350 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts))
+System.AggregateException: One or more errors occurred. (Timeout awaiting response (outbound=0KiB, inbound=0KiB, 12048ms elapsed, timeout is 5000ms), command=EVAL, next: EVAL, inst: 0, qu: 0, qs: 1, aw: False, bw: SpinningDown, rs: DequeueResult, ws: Idle, in: 0, in-pipe: 4, out-pipe: 0, last-in: 2, cur-in: 4, sync-ops: 0, async-ops: 250, serverEndpoint: 127.0.0.1:6379, conn-sec: 769.06, aoc: 1, mc: 1/1/0, mgr: 9 of 10 available, clientName: congtc(SE.Redis-v2.6.122.38350), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=4509,Timers=5), v: 2.6.122.38350 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts))
+ ---> StackExchange.Redis.RedisTimeoutException: Timeout awaiting response (outbound=0KiB, inbound=0KiB, 12048ms elapsed, timeout is 5000ms), command=EVAL, next: EVAL, inst: 0, qu: 0, qs: 1, aw: False, bw: SpinningDown, rs: DequeueResult, ws: Idle, in: 0, in-pipe: 4, out-pipe: 0, last-in: 2, cur-in: 4, sync-ops: 0, async-ops: 250, serverEndpoint: 127.0.0.1:6379, conn-sec: 769.06, aoc: 1, mc: 1/1/0, mgr: 9 of 10 available, clientName: congtc(SE.Redis-v2.6.122.38350), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=4509,Timers=5), v: 2.6.122.38350 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+   at StackExchange.Redis.RedisDatabase.ScriptEvaluateAsync(String script, RedisKey[] keys, RedisValue[] values, CommandFlags flags) in /_/src/StackExchange.Redis/RedisDatabase.cs:line 1552
+   at Medallion.Threading.Redis.RedLock.RedLockRelease.ReleaseAsync() in /_/DistributedLock.Redis/RedLock/RedLockRelease.cs:line 69
+   --- End of inner exception stack trace ---
+   at Medallion.Threading.Redis.RedLock.RedLockRelease.ReleaseAsync() in /_/DistributedLock.Redis/RedLock/RedLockRelease.cs:line 78
+   at Medallion.Threading.Redis.RedLock.RedLockHandle.DisposeAsync() in /_/DistributedLock.Redis/RedLock/RedLockHandle.cs:line 52
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.DoWorkAsync(CancellationToken cancellationToken)
