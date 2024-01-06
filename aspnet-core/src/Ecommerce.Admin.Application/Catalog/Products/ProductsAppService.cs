@@ -23,21 +23,10 @@ namespace Ecommerce.Admin.Catalog.Products
            
         }
         
-        // public async Task<PagedResultDto<ProductInListDto>> GetListFilterAsync(BaseListFilterDto input)
-        // {
-        //     var query = await Repository.GetQueryableAsync();
-        //     query = query.WhereIf(!string.IsNullOrWhiteSpace(input.Keyword), x => x.Name.Contains(input.Keyword));
-        //
-        //     var totalCount = await AsyncExecuter.LongCountAsync(query);
-        //     var data = await AsyncExecuter.ToListAsync(query.Skip(input.SkipCount).Take(input.MaxResultCount));
-        //
-        //     return new PagedResultDto<ProductInListDto>(totalCount,ObjectMapper.Map<List<Product>,List<ProductInListDto>>(data));
-        // }
-
         public async Task<List<ProductInListDto>> GetListAllAsync()
         {
             var query = await Repository.GetQueryableAsync();
-            query = query.Where(x=>x.IsActive == true);
+            query = query.Where(x => x.IsActive == true);
             var data = await AsyncExecuter.ToListAsync(query);
 
             return ObjectMapper.Map<List<Product>, List<ProductInListDto>>(data);
@@ -50,9 +39,20 @@ namespace Ecommerce.Admin.Catalog.Products
         }
 
 
-        public Task<PagedResultDto<ProductInListDto>> GetListFilterAsync(ProductListFilterDto input)
+        public async Task<PagedResultDto<ProductInListDto>> GetListFilterAsync(ProductListFilterDto input)
         {
-            throw new NotImplementedException();
+            var query = await Repository.GetQueryableAsync();
+            query = query.WhereIf(!string.IsNullOrWhiteSpace(input.Keyword), x => x.Name.Contains(input.Keyword));
+            query = query.WhereIf(input.CategoryId.HasValue, x => x.CategoryId == input.CategoryId);
+
+            var totalCount = await AsyncExecuter.LongCountAsync(query);
+            var data = await AsyncExecuter.ToListAsync(
+                query.OrderByDescending(x => x.CreationTime)
+                    .Skip(input.SkipCount)
+                    .Take(input.MaxResultCount)
+            );
+
+            return new PagedResultDto<ProductInListDto>(totalCount, ObjectMapper.Map<List<Product>, List<ProductInListDto>>(data));
         }
         
 
